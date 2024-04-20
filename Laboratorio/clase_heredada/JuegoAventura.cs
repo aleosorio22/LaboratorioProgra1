@@ -25,10 +25,10 @@ namespace LaboratorioProgra1.Laboratorio.clase_heredada
         {
             Console.WriteLine("La accion principal es mostrar mapa");
         }
-        public JuegoAventura(string mundo, string Misiones)
+        public JuegoAventura(string mundo, string misiones)
         {
             Mundo = mundo;
-            Misiones = Misiones;
+            Misiones = misiones;
         }
     }
 }   

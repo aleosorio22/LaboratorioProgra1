@@ -20,6 +20,13 @@ namespace LaboratorioProgra1.Laboratorio.clase_heredada
         {
             Console.WriteLine("La accion principal es mover bloques");
         }
+
+        public rol(int niveles, int puntuacion)
+        {
+            NivelesCompletados = niveles;
+            Puntuacion = puntuacion;
+        }
     }
+
     
 }

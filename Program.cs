@@ -31,12 +31,9 @@ Console.WriteLine("Hola este es el laboratorio");
 //VideoJuego.listaDeJuegos();
 
 
-rol candy = new rol();
-candy.Titulo = "Candy Crush";
-candy.Desarrolladora = "Soda Sagag";
-candy.AnioLanzamiento = 2019;
-candy.Calificacion = 50;
-candy.MostrarInformacion();
 
 juegoAccion accion = new juegoAccion(10, "glock");
 Console.WriteLine($"Nivel de dificultad: {accion.NivelDificultad}, arma: {accion.ArmaDisponible}");
+
+JuegoAventura aventura = new JuegoAventura("Papa Locas", "Encontrar la salida");
+Console.WriteLine($"AVENTURA: Nivel de dificultad {accion.NivelDificultad}");
