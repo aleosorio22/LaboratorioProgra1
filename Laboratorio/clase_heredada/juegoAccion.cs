@@ -10,6 +10,8 @@ namespace LaboratorioProgra1.Laboratorio.clase_heredada
     internal class juegoAccion : VideoJuego
     {
         public int NivelDificultad {  get; set; }
+
+        public string ArmaDisponible { get; set; } 
         
         public void Disparar()
         {
@@ -26,10 +28,10 @@ namespace LaboratorioProgra1.Laboratorio.clase_heredada
         }
 
 
-        public juegoAccion(int nivelDificultad, List<string> armasDisponibles)
+        public juegoAccion(int nivelDificultad, string armaDisponible1)
         {
-            this.nivelDificultad = nivelDificultad;
-            this.armasDisponibles = armasDisponibles;
+            NivelDificultad = nivelDificultad;
+            ArmaDisponible = armaDisponible1;
         }
     }
 }

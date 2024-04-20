@@ -38,9 +38,5 @@ candy.AnioLanzamiento = 2019;
 candy.Calificacion = 50;
 candy.MostrarInformacion();
 
-juegoAccion disparos = new juegoAccion();
-disparos.ConstructorAccion( 9, ["mp40", "Glock"]);
-
-Console.WriteLine(disparos.ArmasDisponibles);
-disparos.Disparar();
-Console.WriteLine($"Nivel de dificultad {disparos.NivelDificultad}");
+juegoAccion accion = new juegoAccion(10, "glock");
+Console.WriteLine($"Nivel de dificultad: {accion.NivelDificultad}, arma: {accion.ArmaDisponible}");

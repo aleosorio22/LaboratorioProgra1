@@ -9,7 +9,7 @@ namespace LaboratorioProgra1.Laboratorio.clase_heredada
     internal class JuegoAventura : VideoJuego
     {
         public string Mundo { get; set; }
-        public List<string> Misiones { get; set; }
+        public string Misiones { get; set; }
 
         public void Explorar()
         {
@@ -24,6 +24,11 @@ namespace LaboratorioProgra1.Laboratorio.clase_heredada
         public override void AccionPrincipal()
         {
             Console.WriteLine("La accion principal es mostrar mapa");
+        }
+        public JuegoAventura(string mundo, string Misiones)
+        {
+            Mundo = mundo;
+            Misiones = Misiones;
         }
     }
 }   
